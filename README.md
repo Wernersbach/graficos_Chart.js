@@ -1,6 +1,7 @@
 # graficos_Chart.js
 
-
+Link para voce ver como e feito: http://renatolucena.ml/blog/blogs/Maio_Grafico.html 
+Biblioteca e baixada da fonte: http://www.chartjs.org/
 
 <!DOCTYPE html>
 <head><meta charset="utf-8" />
