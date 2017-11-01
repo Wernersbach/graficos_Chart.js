@@ -4,7 +4,7 @@
 * Change the value of parameter 3 if you have set a password on the root userid
 * Changer la valeur du 3e paramètre si vous avez mis un mot de passe à root
 */
-$mysqli = new mysqli('fdb4.awardspace.net', '1268420_zf2studentapp', 'violeta1', '1268420_zf2studentapp');
+$mysqli = new mysqli('localhost', 'root', '', '1268420_zf2studentapp');
 
 if ($mysqli->connect_error) {
     die('Connect Error (' . $mysqli->connect_errno . ') '
