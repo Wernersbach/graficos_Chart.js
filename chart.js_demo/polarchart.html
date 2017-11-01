@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Polar</title>
+
+    <script src="Chart.min.js"></script>
+
+    <style type="text/css">
+
+    *{
+        font-family: calibri;        
+    }
+
+    .box {
+        margin: 0px auto;
+        width: 70%;
+    }
+
+    .box-chart {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    </style>  
+
+    <script type="text/javascript">
+        var randomScalingFactor = function(){ return Math.round(Math.random()*300)};
+    </script>  
+
+</head>
+
+<body>    
+
+    <div class="box">
+
+        <h1>Gráfico Polar</h1>
+        <div class="box-chart">
+
+            <canvas id="GraficoPolar" style="width:100%;"></canvas>            
+
+            <script type="text/javascript">
+                                        
+
+                var options = {
+                    responsive:true
+                };
+
+                var data = [
+                    {
+                        value: randomScalingFactor(),
+                        color:"#F7464A",
+                        highlight: "#FF5A5E",
+                        label: "Vermelho"
+                    },
+                    {
+                        value: randomScalingFactor(),
+                        color: "#46BFBD",
+                        highlight: "#5AD3D1",
+                        label: "Azul"
+                    },
+                    {
+                        value: randomScalingFactor(),
+                        color: "#FDB45C",
+                        highlight: "#FFC870",
+                        label: "Amarelo"
+                    },
+                    {
+                        value: randomScalingFactor(),
+                        color: "#949FB1",
+                        highlight: "#A8B3C5",
+                        label: "Cinza"
+                    },
+                    {
+                        value: randomScalingFactor(),
+                        color: "#4D5360",
+                        highlight: "#616774",
+                        label: "Cinza escuro"
+                    }
+
+                ];                
+
+                window.onload = function(){
+
+                    var ctx = document.getElementById("GraficoPolar").getContext("2d");
+                    var PolarChart = new Chart(ctx).PolarArea(data, options);
+                }           
+            </script>
+
+        </div>
+
+  
+    
+    </div>
+    
+</body>
+
+</html>

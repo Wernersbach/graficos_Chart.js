@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.menu_principal
+{
+   /* removeremos todas as formatações da classe menu_principal */
+}
+
+.menu_principal li
+{
+   float: left;
+   list-style-type: none;
+}
+
+
+/* decoraremos os links */
+
+.menu_principal li>a
+{
+   background-color: #49D7FE;
+   display: block;
+   padding: 8px 8px;
+   text-decoration: none;
+   color: #fff;
+}
+
+.menu_principal li>a:hover
+{
+   background-color: #39C0FF;
+}
+/* adicionaremos o display, padding, background-color e width */
+/* na nossa UL principal */
+.menu_principal
+{
+   display: table;
+   padding: 0;
+   background-color: #0BDDFF;
+   width: 100%;
+}
+
+/* e removeremos o background-color daqui */
+.menu_principal li>a
+{
+   display: block;
+   padding: 8px 8px;
+   text-decoration: none;
+   color: #fff;
+}
+.iframe
+{
+   display: table;
+   padding: 0;
+   width: 70%;
+   float: left;
+   list-style-type: none;
+}
+
